@@ -1,0 +1,21 @@
+{
+    "name": "ue4-snippets",
+    "displayName": "Unreal Engine 4 Snippets",
+    "description": "Snippets for working with Unreal Engine 4 C++",
+    "version": "0.6.0",
+    "publisher": "CAPTNCAPS",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "cpp",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}

@@ -1,0 +1,18 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Launch Extension",
+			"type": "extensionHost",
+			"request": "launch",
+			"runtimeExecutable": "/media/data/VSCode-linux-x64/code",
+			"args": [
+				"--extensionDevelopmentPath=/media/data/Projects/Code/ue4-snippets-vs/"
+			],
+			"stopOnEntry": false,
+			"sourceMaps": true,
+			"outDir": "/media/data/Projects/Code/ue4-snippets-vs/out"//,
+			//"preLaunchTask": "npm"
+		}
+	]
+}
