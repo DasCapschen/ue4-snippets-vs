@@ -5,7 +5,7 @@
 			"name": "Launch Extension",
 			"type": "extensionHost",
 			"request": "launch",
-			"runtimeExecutable": "/media/data/VSCode-linux-x64/code",
+			"runtimeExecutable": "code",
 			"args": [
 				"--extensionDevelopmentPath=/media/data/Projects/Code/ue4-snippets-vs/"
 			],

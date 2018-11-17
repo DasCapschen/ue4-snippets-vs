@@ -2,10 +2,11 @@
     "name": "ue4-snippets",
     "displayName": "Unreal Engine 4 Snippets",
     "description": "Snippets for working with Unreal Engine 4 C++",
-    "version": "0.6.0",
+    "version": "1.0.0",
     "publisher": "CAPTNCAPS",
+    "repository": "https://github.com/CAPTNCAPS/ue4-snippets-vs",
     "engines": {
-        "vscode": "^1.0.0"
+        "vscode": "^1.29.1"
     },
     "categories": [
         "Snippets"

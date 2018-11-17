@@ -1,3 +1,19 @@
+## 2.0.0
+* Add new snippets:
+	+ Timer Invalidate
+	+ Spawn Decal Location/Attached
+	+ Spawn Sound 2D/Location/Attached
+	+ Spawn Dialog 2D/Location/Attached
+	+ Play Dialog 2D/Location
+	+ Play Sound 2D
+* Remove snippets:
+	+ Play Sound Attached (no longer exists in UE4)
+* Change Prefixes to be more consistent
+* Add more parameters to functions
+* Make use of multiple prefixes
+	+ bump min. vs-code version to 1.29
+* Make use of choice variables
+
 ## 0.6.0
 * Added 3 new snippets:
 	+ Create SaveGame Instance

@@ -5,28 +5,36 @@ This is especially useful on Linux, as auto-completion in IDEs seems to fail a l
 All snippets start with the letter *u*, so if you're looking for all the snippets, just type that and explore :)  
 
 ### Currently includes snippets for:
-* print strings to screen
-* print messages to log
-* spawn emitters at location / attached
-* play sounds at location / attached
-* spawn actors
-* spawn actors deferred
-* safely get world (with if check, needed for spawning things)
-* create UEnums
-* create UStructs
-* create UClasses (as if you ever needed to but why not)
-* cast UObjects
-* uproperty and ufunction macro
-* creating default subobjects (components)
-* single & multi linetrace by channel/object/profile
-* single & multi overlap by channel/object/profile
-* multi sweep by channel/object/profile
-* set timer & clear timer
-* input axis & input action binding
-* subclass pointer
-* replication functions
-* getting all actors of a class
-* finding Datatable rows
-* creating SaveGames
-* loading SaveGames
-* saving SaveGames
+* Print strings to screen
+* Print messages to log
+* Create UENUMS
+* Create USTRUCTS
+* Create USTRUCTS for datatables
+* Create UCLASS
+* GetLifeTimeReplicatedProps
+* Casting
+* UPROPERTY
+* UFUNCTION (Server, Client, Multicast)
+* Subclass Pointers
+* CreateDefaultSubobject
+* Get UWorld Safely with if check
+* Get GameMode
+* LineTrace Single/Multi per Channel/Object/Profile
+* Sweep Single/Multi per Channel/Object/Profile
+* Overlap Multi per Channel/Object/Profile
+* Spawn Actor
+* Spawn Actor Deferred
+* Timer Set
+* Timer Invalidate
+* Timer Clear
+* Bind Axis (Input)
+* Bind Action (Input)
+* Spawn Decal Attached/AtLocation
+* Spawn Emitter Attached/AtLocation
+* Spawn Dialog 2D/Location/Attached
+* Spawn Sound 2D/Location/Attached
+* Play Dialog 2D/Location
+* Play Sound 2D/Location
+* Get All Actors of Class
+* Find DataTable Row
+* SaveGame Create/Save/Load
