@@ -365,5 +365,13 @@
 			"prefix": "usavegame_load",
 			"body": "${1:UMySaveGame}* ${2:Instance} = Cast<${1:UMySaveGame}>(UGameplayStatics::LoadGameFromSlot(${3:SaveSlotName}, ${4:UserIndex}));",
 			"description": "Load a SaveGame from disk."
+		},
+		"Unreal TMap": {
+		"prefix": "umap",
+		"body": [
+			"UPROPERTY(Category=${2:MyCategory}, EditAnywhere)",
+			"TMap<${1:uint32}, ${2:FString}> FruitMap;"
+		],
+		"description": "Generate a TMap ready for Unreal Engine"
 		}
 }
