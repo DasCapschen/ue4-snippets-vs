@@ -1,9 +1,9 @@
 {
 		"Unreal Print String": {
-	    	"prefix": "uprintstring",
-	    	"body": "GEngine->AddOnScreenDebugMessage(0, ${1:0.f}, FColor::${2|Red,Green,Blue,Cyan,Magenta,Yellow,Purple,Orange|}, FString::Printf(TEXT(\"${3:TEXT}\")));",
-	    	"description": "Print a string to screen ingame (duration, color, text)"
-	    },
+			"prefix": "uprintstring",
+			"body": "GEngine->AddOnScreenDebugMessage(0, ${1:0.f}, FColor::${2|Red,Green,Blue,Cyan,Magenta,Yellow,Purple,Orange|}, FString::Printf(TEXT(\"${3:TEXT}\")));",
+			"description": "Print a string to screen ingame (duration, color, text)"
+		},
 		"Write to Log":{
 			"prefix": "ulog",
 			"body": "UE_LOG(LogTemp, ${1|Display,Warning,Error,Fatal|}, TEXT(\"${2:Your message}\"));",
@@ -61,6 +61,74 @@
 				"};"
 			],
 			"description": "Generate a Class ready for Unreal Engine"
+		},
+		
+		"Unreal Class with header": {
+			"prefix": "uhclass",
+			"body": [
+				"#pragma once",
+				"",
+				"#include \"CoreMinimal.h\"",
+				"#include \"$4${3:ParentClass}.h\"",
+				"",
+				"#include \"${TM_FILENAME_BASE:ClassName}.generated.h\"",
+				"",
+				"UCLASS()",
+				"class ${1:PROJECTNAME}_API $2${TM_FILENAME_BASE:ClassName} : public ${3:ParentClass}",
+				"{",
+				"\tGENERATED_BODY()",
+				"public:",
+				"\t$2${TM_FILENAME_BASE:ClassName}();",
+				"$5",
+				"protected:",
+				"private:",
+				"};"
+			],
+			"description": "Generate a Class ready for Unreal Engine  (include header details)"
+		},
+		
+		"Unreal Interface": {
+			"prefix": "uinterface",
+			"body": [
+				"UINTERFACE()",
+				"class ${1:PROJECTNAME}_API U${2:ClassName} : public UInterface",
+				"{",
+				"\tGENERATED_BODY()",
+				"};",
+				"",
+				"class ${1:PROJECTNAME}_API I${2:ClassName}",
+				"{",
+				"\tGENERATED_BODY()",
+				"public:",
+				"$3",
+				"};"
+			],
+			"description": "Generate an Interface ready for Unreal Engine"
+		},
+		
+		"Unreal Interface with header": {
+			"prefix": "uhinterface",
+			"body": [
+				"#pragma once",
+				"",
+				"#include \"CoreMinimal.h\"",
+				"",
+				"#include \"${TM_FILENAME_BASE:ClassName}.generated.h\"",
+				"",
+				"UINTERFACE()",
+				"class ${1:PROJECTNAME}_API U$2${TM_FILENAME_BASE:ClassName} : public UInterface",
+				"{",
+				"\tGENERATED_BODY()",
+				"};",
+				"",
+				"class ${1:PROJECTNAME}_API I$2${TM_FILENAME_BASE:ClassName}",
+				"{",
+				"\tGENERATED_BODY()",
+				"public:",
+				"$3",
+				"};"
+			],
+			"description": "Generate an Interface ready for Unreal Engine (include header details)"
 		},
 
 		"Unreal GetLifeTimeReplicates":{

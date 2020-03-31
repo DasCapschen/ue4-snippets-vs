@@ -1,3 +1,8 @@
+## [Unreleased]
+* Add new snippets:
+	+ Interface
+* Improve README
+
 ## 2.0.0
 * Add new snippets:
 	+ Timer Invalidate
