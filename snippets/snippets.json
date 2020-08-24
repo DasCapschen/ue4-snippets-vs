@@ -151,12 +151,12 @@
 
 		"Unreal Property":{
 			"prefix": "uproperty",
-			"body": "UPROPERTY($1)",
+			"body": "UPROPERTY(${1|AdvancedDisplay,AssetRegistrySearchable,BlueprintAssignable,BlueprintAuthorityOnly,BlueprintCallable,BlueprintGetter=GetterFunctionName,BlueprintReadOnly,BlueprintReadWrite,BlueprintSetter=SetterFunctionName,Category=\"MyCategory\",Config,DuplicateTransient,EditAnywhere,EditDefaultsOnly,EditFixedSize,EditInline,EditInstanceOnly,Export,GlobalConfig,Instanced,Interp,Localized,Native,NoClear,NoExport,NonPIEDuplicateTransient,NonTransactional,NotReplicated,Replicated,ReplicatedUsing=FunctionName,RepRetry,SaveGame,SerializeText,SkipSerialization,SimpleDisplay,TextExportTransient,Transient,VisibleAnywhere,VisibleDefaultsOnly,VisibleInstanceOnly|})",
 			"description": "UPROPERTY macro for Unreal Engine"
 		},
 		"Unreal Function":{
 			"prefix": "ufunction",
-			"body": "UFUNCTION($1)",
+			"body": "UFUNCTION(${1|BlueprintAuthorityOnly,BlueprintCallable,BlueprintCosmetic,BlueprintImplementableEvent,BlueprintNativeEvent,BlueprintPure,CallInEditor,Category=\"Category\",Client,CustomThunk,Exec,NetMulticast,Reliable,SealedEvent,ServiceRequest,ServiceResponse,Server,Unreliable,WithValidation|})",
 			"description": "UFUNCTION macro for Unreal Engine"
 		},
 		"Unreal Server Function":{
